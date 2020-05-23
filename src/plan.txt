@@ -1,0 +1,8 @@
+An(other) attempt at an Arbitrary Precision program
+
+** Program requires you to work with fixed precision
+** First, one creates a workspace and then sets the precision
+ 	- the precision is not supposed to change after a workspace is created
+	- we should implement a way of copying a workspace to a workspace with greater
+	   precision, but not the other way around.
+** Add a testing class to time the operations.

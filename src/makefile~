@@ -1,0 +1,10 @@
+CC:= g++
+CCFlags:= -std=c++17
+workspace:
+	$(CC) $(CCFlags) -c blocks.cpp workspace.cpp 
+blocks:
+	$(CC) $(CCFlags) -c blocks.cpp
+add-test:
+	$(CC) $(CCFlags) blocks.cpp workspace.cpp tests/add-test.cpp -o add-test
+test: add-test
+	./add-test
